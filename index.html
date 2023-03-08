@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stlye.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="before">Loan Calculator</h1>
+        <form id="form">
+            <div class="bar">
+                <span class="symbol">$</span>
+                <input type="text" class="input" id="loan" placeholder="Loan Amount">
+            </div>
+            <div class="bar">
+                <span class="symbol-2">%</span>
+                <input type="text" class="input" id="interest" placeholder="Interest Amount">
+            </div>
+            <div class="bar">
+                <span class="symbol">T</span>
+                <input type="text" class="input" id="years" placeholder="Years to Repay">
+            </div>
+            <div><input type="submit" value="Calculate" class="submit"></div>
+            
+        </form>
+        <div class="img" id="img">
+            <img src="img/loading.gif" alt="">
+        </div>
+        <div class="results" id="results">
+            <h1>Results</h1>
+            <div class="bar">
+                <input type="text" class="input" id="monthly" placeholder="Monthly Payment" disabled value="">
+            </div>
+            <div class="bar">
+                <input type="text" class="input" id="total-payment" placeholder="Total Payment" disabled value="">
+            </div>
+            <div class="bar">
+                <input type="text" class="input" id="total-interest" placeholder="Total Interest" disabled value="">
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
